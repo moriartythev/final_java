@@ -5,6 +5,7 @@ public class linear_search {
         int n;
         System.out.println("enter number of elements in a array");
         n = sc.nextInt();
+        sc.nextLine();
         String a[]= new String [n];
         System.out.println("enter value to be seached ");
         String m = sc.nextLine();
@@ -14,7 +15,7 @@ public class linear_search {
             a[i] = sc.nextLine();
         }
         for(i = 0;i<n;i++){
-            if(m==a[i]){
+            if(m.equals(a[i])){
             break;}
         }
         if(i<n){
